@@ -12,7 +12,7 @@ async function main() {
     const amountInEther = "2000000000";
     const amountInWei = ethers.utils.parseEther(amountInEther);
     await ferrariToken.mint(owner.address, amountInWei);
-    console.log("%s token minted to acount %s FerrariToken", amountInEther, owner.address);
+    console.log("%s FerrariToken minted to account %s", amountInEther, owner.address);
 }
 
 
