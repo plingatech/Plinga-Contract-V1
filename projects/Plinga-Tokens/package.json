@@ -9,7 +9,7 @@
     "compile": "hardhat compile",
     "test": "hardhat test"
   },
-  "author": "",
+  "author": "Plinga Team",
   "license": "ISC",
   "devDependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.2",
@@ -20,11 +20,13 @@
     "@nomiclabs/hardhat-ethers": "^2.2.3",
     "@nomiclabs/hardhat-etherscan": "^3.1.7",
     "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "@openzeppelin/hardhat-upgrades": "^2.2.1",
     "@typechain/ethers-v6": "^0.4.3",
     "@types/chai": "^4.3.5",
     "@types/mocha": "^10.0.1",
     "chai": "^4.3.8",
     "decimal.js": "^10.4.3",
+    "dotenv": "^16.3.1",
     "ethereum-waffle": "^4.0.10",
     "ethers": "^5.7.2",
     "hardhat": "^2.17.1",
@@ -43,6 +45,9 @@
   },
   "dependencies": {
     "@ericxstone/hardhat-blockscout-verify": "^1.0.2",
-    "@nomiclabs/hardhat-etherscan": "^3.1.7"
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@openzeppelin/contracts": "^4.9.3",
+    "@openzeppelin/contracts-upgradeable": "^4.9.3",
+    "base64-sol": "^1.1.0"
   }
 }
