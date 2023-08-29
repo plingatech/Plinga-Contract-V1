@@ -3,7 +3,7 @@ import fs from 'fs'
 
 async function main() {
     const [owner] = await ethers.getSigners()
-    console.log('owner', owner.address)
+    console.log('owner : ', owner.getAddress())
     const FerrariToken = await ethers.getContractFactory("FerrariToken");
     console.log("Deploying FerrariToken...");
     const ferrariToken = await FerrariToken.deploy();

@@ -112,10 +112,11 @@ export default {
     ...(process.env.KEY_ETH && { eth }),
     ...(process.env.KEY_NEXI && { nexichain }),
     ...(process.env.KEY_PLINGA && { plgchain }),
-    // mainnet: bscMainnet,
   },
   etherscan: {
-    apiKey: process.env.ETHERSCAN_API_KEY || '',
+    apiKey: {
+      plgchain: 'aaaaaaaaaaaaaaaaaaaa',
+    },
     customChains: [
       {
         network: "plgchain",

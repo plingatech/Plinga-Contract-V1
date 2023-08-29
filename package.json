@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "compile": "yarn workspaces run compile",
-    "test": "yarn workspaces run test"
+    "test": "yarn workspaces run test",
+    "clean": "rm -rf node_modules"
   },
   "devDependencies": {
     "@typechain/hardhat": "^6.1.5",
