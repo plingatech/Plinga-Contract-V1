@@ -37,6 +37,17 @@ const LOWEST_OPTIMIZER_COMPILER_SETTINGS = {
   },
 }
 
+const SECUSD_OPTIMIZER_COMPILER_SETTINGS = {
+  version: '0.5.16',
+  settings: {
+    evmVersion: 'istanbul',
+    optimizer: {
+      enabled: true,
+      runs: 200,
+    },
+  },
+}
+
 const NO_OPTIMIZER_COMPILER_SETTINGS = {
   version: '0.8.19',
   settings: {
@@ -122,8 +133,8 @@ export default {
         network: "plgchain",
         chainId: 242,
         urls: {
-          apiURL: "http://185.128.137.241:4000/api",
-          browserURL: "http://185.128.137.241:4000",
+          apiURL: "http://185.173.129.84:4000/api",
+          browserURL: "http://185.173.129.84:4000",
         },
       },
       {
@@ -140,6 +151,7 @@ export default {
     compilers: [NO_OPTIMIZER_COMPILER_SETTINGS],
     overrides: {
       'contracts/NonfungiblePositionManager.sol': LOW_OPTIMIZER_COMPILER_SETTINGS,
+      'contracts/SecureUsd.sol': SECUSD_OPTIMIZER_COMPILER_SETTINGS,
       'contracts/test/MockTimeNonfungiblePositionManager.sol': LOW_OPTIMIZER_COMPILER_SETTINGS,
       'contracts/test/NFTDescriptorTest.sol': LOWEST_OPTIMIZER_COMPILER_SETTINGS,
       'contracts/NFTDescriptorEx.sol': LOWEST_OPTIMIZER_COMPILER_SETTINGS,
