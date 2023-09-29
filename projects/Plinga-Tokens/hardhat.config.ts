@@ -133,8 +133,8 @@ export default {
         network: "plgchain",
         chainId: 242,
         urls: {
-          apiURL: "http://185.173.129.84:4000/api",
-          browserURL: "http://185.173.129.84:4000",
+          apiURL: "http://185.128.137.240:4000/api",
+          browserURL: "http://185.128.137.240:4000",
         },
       },
       {
